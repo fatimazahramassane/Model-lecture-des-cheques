@@ -1,0 +1,24 @@
+{
+  "nom": "mlp_final",
+  "horodatage": "20261029-133412",
+  "config": {
+    "largeurs": [
+      256,
+      128
+    ],
+    "dropout": 0.3,
+    "lr": 0.001,
+    "aug_px": 4,
+    "epochs": 60
+  },
+  "metriques": {
+    "exact_test": 0.0972,
+    "auto_test_courbe": 0.005,
+    "auto_test_seuil_val": 0.0048,
+    "precision_auto_seuil_val": 1.0,
+    "seuil_val": 0.9268594980239868
+  },
+  "fichier": "mlp_final_20261029-133412.keras",
+  "taille_octets": 13122365,
+  "sha256": "a2aa219740341c964d8d428555e75d1a3c837ee5e69b54c114d9f8e45bce9acc"
+}

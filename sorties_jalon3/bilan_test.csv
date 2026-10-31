@@ -1,0 +1,4 @@
+exigence,mesure (test),cible,atteinte
+"Lire le montant (B) : exact ≥ 0,70",0.5663333333333334,0.7,False
+"Automatiser (B) : taux ≥ 0,15",0.07266666666666667,0.15,False
+"Repérer les altérations (A) : AUC ≥ 0,95",0.9924169553470331,0.95,True

@@ -1,0 +1,10 @@
+{
+  "modele": "GRU 128 lr=0.003",
+  "seuil_val": 0.9994361374766287,
+  "exact_test": 0.7756,
+  "auto_test_courbe": 0.2362,
+  "auto_test_seuil_val": 0.181,
+  "precision_auto_seuil_val": 0.9911602209944751,
+  "taille_mo": 1.797556,
+  "latence_ms": 10.255041309999342
+}

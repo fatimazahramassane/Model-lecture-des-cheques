@@ -1,0 +1,20 @@
+{
+  "nom": "mlp_reference",
+  "horodatage": "20261029-133412",
+  "config": {
+    "largeurs": [
+      256,
+      128
+    ],
+    "dropout": 0.0,
+    "lr": 0.001,
+    "aug_px": 0
+  },
+  "metriques": {
+    "exact_val": 0.058,
+    "auto_val": 0.0003333333333333333
+  },
+  "fichier": "mlp_reference_20261029-133412.keras",
+  "taille_octets": 13117595,
+  "sha256": "a43ed9da1ea58bcc40d65fcb83b8f96bb1f38813b3842c22055871333171d30e"
+}

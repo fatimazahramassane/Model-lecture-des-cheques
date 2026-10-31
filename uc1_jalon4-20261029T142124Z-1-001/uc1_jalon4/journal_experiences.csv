@@ -1,0 +1,8 @@
+date,jalon,essai,params,exact_val,auto_val,n_params,epoques,remarque,modele,seuil_val,exact_test,auto_test_courbe,auto_test_seuil_val,precision_auto_seuil_val,taille_mo,latence_ms
+2026-10-28 17:22:08,4,GRU 128 lr=0.001,"{""cellule"": ""gru"", ""unites"": 128, ""lr"": 0.001}",0.714,0.2103333333333333,449389.0,23.0,référence séquence,,,,,,,,
+2026-10-28 17:23:32,4,GRU 128 lr=0.003,"{""cellule"": ""gru"", ""unites"": 128, ""lr"": 0.003}",0.8286666666666667,0.2016666666666666,449389.0,25.0,taux d'apprentissage plus élevé,,,,,,,,
+2026-10-28 17:24:59,4,LSTM 94 lr=0.003,"{""cellule"": ""lstm"", ""unites"": 94, ""lr"": 0.003}",0.7566666666666667,0.21,449911.0,24.0,"budget comparable, même lr que le GRU",,,,,,,,
+2026-10-28 17:26:26,4,GRU 128 lr=0.01,"{""cellule"": ""gru"", ""unites"": 128, ""lr"": 0.01}",0.5343333333333333,0.081,449389.0,26.0,bord de la grille,,,,,,,,
+2026-10-28 17:27:58,4,LSTM 94 lr=0.001,"{""cellule"": ""lstm"", ""unites"": 94, ""lr"": 0.001}",0.7226666666666667,0.2046666666666666,449911.0,26.0,LSTM au lr de référence,,,,,,,,
+2026-10-28 17:28:52,4,positions (même tronc),"{""dense"": 128}",0.338,0.008,1111543.0,12.0,baseline lecture par positions,,,,,,,,
+2026-10-28 17:28:56,4,FINAL test,"{""modele"": ""GRU 128 lr=0.003"", ""seuil"": 0.9994361374766287}",,,,,évaluation test unique,GRU 128 lr=0.003,0.9994361374766287,0.7756,0.2362,0.181,0.9911602209944751,1.797556,10.255041309999342

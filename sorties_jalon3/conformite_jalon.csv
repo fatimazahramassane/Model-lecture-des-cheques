@@ -1,0 +1,19 @@
+Exigence (jalon),Mesure,Cible,Statut
+Q1. Mesurer la chute du lecteur sur B,A=0.411 → B=0.000,chute quantifiée,✅
+Q1. Caractériser le décalage A→B,"4 axes : intensités, flou, motif, rotation",4 axes,✅
+Q2. Trois stratégies sur 600 images B,"zéro=True, extraction=True, ajustement fin=True",3 stratégies,✅
+Q2. Faire varier le LR de l'ajustement fin,5 valeurs ; retenu=3e-05,≥2 valeurs,✅
+Q3. Augmentation imitant B (seule),0 étiquette B,présente,✅
+Q3. Augmentation + ajustement fin,600 étiquettes B,présente,✅
+Q3. Coût (temps + étiquettes),colonnes temps_A_s / temps_B_s / étiquettes_B,présent,✅
+Q4. Modèle multitâche (5 têtes + altération),7 configurations,1 modèle + λ,✅
+Q4. Étudier λ,5 valeurs ; retenu=0.3,≥3 valeurs,✅
+Q4. Transfert de la détection à B,AUC B0 vs Bft,mesuré,✅
+Q5. Vérification théorique (paramètres),"total=587,255 ; 531,511 entraînables si convs gelées (90.5%)",comptage + proposition d'archi,✅
+Q6. Page de décisions (procédure + λ),rédigée §8,présente,✅
+Livrable : notebook reproductible,graine=42 + requirements.txt,graine + versions,✅
+Livrable : journal (jalon=3),27 entrées,toutes les expériences,✅
+"Cible — Lire le montant (B) : exact ≥ 0,70",0.399,≥ 0.70,❌
+"Cible — Automatiser (B) : taux ≥ 0,15",0.076,≥ 0.15,❌
+"Cible — Repérer les altérations (A) : AUC ≥ 0,95",0.834,≥ 0.95,❌
+Protocole : test utilisé une seule fois,garde TEST_DEJA_UTILISE active,1 seule fois,✅

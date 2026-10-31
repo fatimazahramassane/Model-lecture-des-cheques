@@ -1,0 +1,8 @@
+tâche,stratégie,exact_val_B,auto_val_B,étiquettes_B,temps_A_s,temps_B_s
+lecture B (val),sans adaptation (lecteur renforcé),0.428,0.095,0,151.517,0.0
+lecture B (val),de zéro sur B,0.003,0.003,600,0.0,27.156
+lecture B (val),ajustement fin seul (lr=1e-05),0.54,0.089,600,151.517,82.096
+lecture B (val),augmentation p=0.5,0.585,0.15,0,534.763,0.0
+lecture B (val),augmentation p=0.5 + ajustement fin,0.631,0.18,600,534.763,55.497
+lecture B (val),augmentation p=0.25,0.568,0.152,0,425.289,0.0
+lecture B (val),augmentation p=0.25 + ajustement fin,0.631,0.106,600,425.289,25.447

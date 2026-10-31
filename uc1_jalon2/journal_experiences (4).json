@@ -1,0 +1,101 @@
+[
+  {
+    "jalon": 2,
+    "date": "2026-10-31 17:53:35",
+    "nom": "CNN_Reference",
+    "hyperparametres": {
+      "filtres": [
+        32,
+        64,
+        64
+      ],
+      "noyau": 3,
+      "dense": 128,
+      "epochs": 10
+    },
+    "metriques": {
+      "acc_exacte_val": 0.4166666666666667
+    }
+  },
+  {
+    "jalon": 2,
+    "date": "2026-10-31 17:54:38",
+    "nom": "Variante_noyau 5x5",
+    "hyperparametres": {
+      "noyau": "5",
+      "epochs": 10
+    },
+    "metriques": {
+      "acc_exacte_val": 0.5106666666666667
+    }
+  },
+  {
+    "jalon": 2,
+    "date": "2026-10-31 17:55:15",
+    "nom": "Variante_2 blocs",
+    "hyperparametres": {
+      "filtres": "(32, 64)",
+      "epochs": 10
+    },
+    "metriques": {
+      "acc_exacte_val": 0.253
+    }
+  },
+  {
+    "jalon": 2,
+    "date": "2026-10-31 17:55:55",
+    "nom": "Variante_agregation GAP",
+    "hyperparametres": {
+      "agregation": "gap",
+      "epochs": 10
+    },
+    "metriques": {
+      "acc_exacte_val": 0.054
+    }
+  },
+  {
+    "jalon": 2,
+    "date": "2026-10-31 17:56:35",
+    "nom": "Detecteur_Alteration",
+    "hyperparametres": {
+      "blocs": 3,
+      "dropout": 0.3,
+      "class_weight": {
+        "0": 1.0,
+        "1": 9.135135135135135
+      }
+    },
+    "metriques": {
+      "auc_val": 0.9924706794610836,
+      "rappel_5fpr": 0.9789473684210527
+    }
+  },
+  {
+    "jalon": 2,
+    "date": "2026-10-31 17:58:02",
+    "nom": "AutoEncodeur_Debruiteur",
+    "hyperparametres": {
+      "epochs": 12,
+      "perte": "MSE pondérée encre x10",
+      "corruption": "pâle+flou+bandes verticales+bruit"
+    },
+    "metriques": {
+      "acc_B_val_brut": 0.005,
+      "acc_B_val_etire": 0.0225,
+      "acc_B_val_debruite": 0.48
+    }
+  },
+  {
+    "jalon": 2,
+    "date": "2026-10-31 17:58:20",
+    "nom": "TEST_FINAL",
+    "hyperparametres": {
+      "modele": "noyau 5x5"
+    },
+    "metriques": {
+      "acc_A": 0.46,
+      "auc_alt_A": 0.992653729301898,
+      "acc_B_debruite": 0.42233333333333334
+    }
+  }
+]
