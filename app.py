@@ -396,7 +396,7 @@ def page_fichiers():
         lignes.append({"élément": nom, "trouvé": "✅" if c else "❌", "fichier": c.relative_to(BASE).as_posix() if c else ""})
     st.dataframe(pd.DataFrame(lignes), hide_index=True)
     st.write(f"TensorFlow **{tf.__version__}** · Keras **{keras.__version__}**")
-    st.caption("Les modèles ont été entraînés avec TensorFlow 2.21 / Keras 3.13 : gardez les mêmes versions.")
+    st.caption("Modèles entraînés avec TensorFlow 2.21 / Keras 3.13 (Colab). Le déploiement utilise TensorFlow 2.22 (Python 3.14), testé compatible.")
 
 def main():
     st.set_page_config(page_title="Lecture automatique des chèques", page_icon="🧾", layout="wide")
