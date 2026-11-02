@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Notebooks (non nécessaires à l'application ; à ajouter plus tard si besoin)
+*.ipynb
+
+# Données volumineuses et archives : ne pas pousser
+*.zip
+*.npz
+!exemples.npz
+
+# Points de reprise d'entraînement (Jalon 4)
+*_reprise/
+
+# Modèles non utilisés par l'application
+cnn_reference*.keras
+lecteur_A*.keras
+*_h.json
+*lr_0.001*.weights.h5
+*lr_0.01.weights.h5
+
+# Fichiers système
+.DS_Store
+Thumbs.db
