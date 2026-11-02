@@ -280,15 +280,15 @@ def afficher_carte(col, titre, res, seuil_manuel, vrai=None):
     seuil = res["seuil"] if res["seuil"] is not None else seuil_manuel
     origine = "seuil du notebook" if res["seuil"] is not None else "seuil manuel"
     auto = res["conf"] >= seuil
-    col.write(("✅ **automatique**" if auto else "👤 **vers un opérateur**") + f"  \n_{origine} = {seuil:.4f}_")
+    col.write((" **automatique**" if auto else " **vers un opérateur**") + f"  \n_{origine} = {seuil:.4f}_")
     if res.get("alt") is not None:
         suspect = res["alt"] >= res["seuil_alt"]
-        col.write(("⚠️ **altération suspectée**" if suspect else "🟢 pas d'altération détectée")
+        col.write((" **altération suspectée**" if suspect else " pas d'altération détectée")
                   + f"  \n_score {res['alt']:.3f} · seuil {res['seuil_alt']}_")
     if res.get("info"):
         col.caption(res["info"])
     if vrai is not None:
-        col.write("✔️ correct" if res["lu"] == vrai else f"❌ erreur (vrai : {vrai})")
+        col.write(" correct" if res["lu"] == vrai else f" erreur (vrai : {vrai})")
 
 def page_lecture(p):
     st.header("Lire un chèque avec les 4 jalons")
